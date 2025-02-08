@@ -1,0 +1,36 @@
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+  }
+  
+  /* Container for footer content */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Footer text styling */
+  .footer-text {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Styling for footer links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Footer link item styling */
+  .footer-links li {
+    margin: 5px 0;
+  }
+  

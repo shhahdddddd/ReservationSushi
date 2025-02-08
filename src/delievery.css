@@ -1,0 +1,114 @@
+/* Delivery Section Styles */
+#delivery {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+.grid {
+    display: flex;
+    justify-content: center; /* Align items from left to right */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    width: 100%; /* Ensures the grid takes full width */
+}
+
+/* Individual Delivery Item Cards */
+.grid .bg-gray-100 {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0; /* Prevents items from shrinking */
+    width: 250px; /* Controls the width of each item */
+    min-width: 250px; /* Ensures minimum width for each item */
+}
+
+/* Hover Effects */
+.grid .bg-gray-100:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Delivery Item Image */
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Title */
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Title Hover Effect */
+.grid .bg-gray-100:hover h3 {
+    color: #cb5317;
+}
+
+/* Price */
+p.text-gray-600 {
+    font-size: 1rem;
+    color: #cb5317;
+    margin-top: 0.5rem;
+}
+
+/* Description */
+p.text-gray-500 {
+    font-size: 0.875rem;
+    color: #777;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Hover Effect on Text */
+.grid .bg-gray-100:hover .text-gray-500 {
+    color: #333;
+    transform: translateY(5px);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.grid .bg-gray-100:hover .text-gray-600 {
+    color: #cb5317;
+}
+
+/* Delivery Button */
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #cb5317;
+    transform: scale(1.05);
+}

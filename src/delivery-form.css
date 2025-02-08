@@ -1,0 +1,69 @@
+.container {
+  max-width: 800px; /* Allows enough space for the form layout */
+  margin: 0 auto; /* Centers the form on the page */
+  padding: 2rem; /* Adds padding inside the container */
+  background-color: #f7f7f7; /* Light background for better readability */
+  border-radius: 1rem; /* Rounded corners for a polished look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stacks form elements vertically */
+  gap: 1rem; /* Adds space between form fields */
+}
+
+form input,
+form select {
+  width: 100%; /* Ensures inputs and selects take full container width */
+  padding: 0.75rem; /* Adds padding inside form elements */
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 0.5rem; /* Rounded corners */
+  font-size: 1rem; /* Ensures consistent font size */
+  box-sizing: border-box; /* Includes padding in the width/height calculation */
+}
+
+form input:focus,
+form select:focus {
+  border-color: #cb5317; /* Highlight border on focus */
+  outline: none; /* Removes default focus outline */
+}
+
+button {
+  padding: 0.75rem 1.5rem; /* Padding for the button */
+  background-color: #ff7300; /* Primary button color */
+  color: white; /* White text */
+  border: none; /* Removes default button border */
+  border-radius: 0.5rem; /* Rounded button */
+  font-size: 1rem; /* Button font size */
+  font-weight: 600; /* Makes text bold */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #cb5317; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+h2 {
+  font-size: 2rem; /* Large heading for section */
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem; /* Space below heading */
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.text-gray-600 {
+  color: #cb5317;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
