@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './navbar';
 import Menu from './menu';
 import AdminLogin from './admin/AdminLogin';
@@ -10,7 +10,6 @@ import Delivery from './delievery';
 import DeliveryForm from './DeliveryForm';
 import Contact from './contact';
 import ProtectedRoute from './utils/ProtectedRoute';
-import { Navigate } from 'react-router-dom';  // Add this import
 import './App.css';
 
 function App() {
@@ -28,7 +27,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Navigate to="/admin/login" />} />
           <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin/AdminDashboard"
+          <Route
+            path="/admin/AdminDashboard"
             element={
               <ProtectedRoute>
                 <AdminDashboard />
